@@ -9,7 +9,7 @@ defmodule RocketpayWeb.UsersController do
     |> handle_response(conn)
   end
 
-  defp handle_response({:ok, %User{} = user}, conn ) do
+  defp handle_response({:ok, %User{} = user}, conn) do
     conn
     |> put_status(:created)
     |> render("create.json", user: user)

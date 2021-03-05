@@ -5,7 +5,7 @@ defmodule Rocketpay.User do
   alias Ecto.Changeset
 
   @primary_key {:id, :id, autogenerate: true}
-  #note: binary_id does not work because
+  # note: binary_id does not work because
   # of a "cast error" associated with
   # conflicting versions of my tools
 

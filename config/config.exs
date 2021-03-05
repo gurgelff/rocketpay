@@ -18,9 +18,9 @@ config :rocketpay, RocketpayWeb.Endpoint,
   pubsub_server: Rocketpay.PubSub,
   live_view: [signing_salt: "nQPjmB0Z"]
 
-  config :rocketpay, RocketpayWeb.Repo,
-    migration_primary_key: [type: :binary_id],
-    migration_foreign_key: [type: :binary_id]
+config :rocketpay, RocketpayWeb.Repo,
+  migration_primary_key: [type: :binary_id],
+  migration_foreign_key: [type: :binary_id]
 
 # Configures Elixir's Logger
 config :logger, :console,

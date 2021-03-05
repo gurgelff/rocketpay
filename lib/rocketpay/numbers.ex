@@ -11,6 +11,7 @@ defmodule Rocketpay.Numbers do
       |> String.split(",")
       |> Stream.map(fn number -> String.to_integer(number) end)
       |> Enum.sum()
+
     {:ok, %{result: result}}
   end
 
