@@ -25,5 +25,4 @@ defmodule Rocketpay.Account do
     |> validate_required(@required_params)
     |> check_constraint(:balance, name: :balance_must_be_positive_or_zero)
   end
-
 end
